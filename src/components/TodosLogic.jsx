@@ -36,7 +36,6 @@ const TodoLogic = () => {
   }
 
   const delTodo = (id) => {
-    // console.log('delete', id)
     setTodos([
       ...todos.filter((todo) => {
         return todo.id !== id;

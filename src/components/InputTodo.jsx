@@ -10,8 +10,6 @@ const InputTodo = ({ addTodoItem }) => {
 
   const handelSubmit = (e) => {
     e.preventDefault();
-    // console.log(title);
-    // console.log(title.trim());
     if (title.trim()) {
       addTodoItem(title);
       setMsg("");

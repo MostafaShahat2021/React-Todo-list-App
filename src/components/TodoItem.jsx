@@ -67,7 +67,6 @@ function TodoItem({ itemProp, setTodos, delTodo, setUpdate }) {
         value={itemProp.title}
         className={styles.textInput}
         //edit todo
-        //onChange={(e) => console.log(e.target.value, itemProp.id)}
         onChange={(e) => setUpdate(e.target.value, itemProp.id)}
       />
     </li>

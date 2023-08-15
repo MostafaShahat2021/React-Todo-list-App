@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import TodoItem from "./TodoItem";
 const TodosList = ({ todosProps, setTodos, delTodo, setUpdate }) => {
   return (
@@ -11,7 +11,7 @@ const TodosList = ({ todosProps, setTodos, delTodo, setUpdate }) => {
   );
 };
 // Validate that the todos prop is an array of objects.
-// TodosList.PropTypes = {
-//   todos: PropTypes.arrayOf(PropTypes.object).isRequired,
-// };
+TodosList.PropTypes = {
+  todos: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 export default TodosList;
